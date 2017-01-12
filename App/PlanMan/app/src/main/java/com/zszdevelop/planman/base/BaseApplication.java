@@ -7,7 +7,6 @@ import android.os.Handler;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-import com.umeng.analytics.AnalyticsConfig;
 import com.zszdevelop.planman.db.DBHelper;
 
 import java.io.IOException;
@@ -37,7 +36,7 @@ public class BaseApplication extends Application {
         application = this;
 
         /** 设置是否对日志信息进行加密, 默认false(不加密). */
-        AnalyticsConfig.enableEncrypt(true);
+//        AnalyticsConfig.enableEncrypt(true);
 
         DBHelper dbHelper = new DBHelper(this);
         try {
